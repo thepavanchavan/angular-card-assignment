@@ -1,0 +1,44 @@
+ <!-- <mat-card class="example-card" *ngFor = "let data of dataSet">
+  <img
+    mat-card-image
+    src="{{data.image}}"
+  />
+  <mat-card-title>{{data.title}</mat-card-title>
+  <mat-card-content>
+    <div class="text">
+     {{data.before}}<span
+        class="{{expand}}"
+        (click)="readMore()"
+        > Read more...</span
+      >
+      <span class="{{ key }}" id="elaboration_1"
+        >{{data.after}}
+        <span
+        class="readLess"
+        (click)="readLess()"
+        > Read less</span></span
+      >
+    </div>
+  </mat-card-content>
+</mat-card>  -->
+
+ <div class="example-card" *ngFor = "let data of dataSet">
+    <img class="image" src="{{data.image}}" alt="Avatar">
+    <div class="container">
+      <h2><b>{{data.title}}</b></h2> 
+      <div class="text">
+        {{data.before}}<span
+           class="{{expand}}"
+           (click)="readMore()"
+           > Read more...</span
+         >
+         <span class="{{ key }}" id="elaboration_1"
+           >{{data.after}}
+           <span
+           class="readLess"
+           (click)="readLess()"
+           > Read less</span></span
+         >
+       </div> 
+    </div>
+  </div> 
