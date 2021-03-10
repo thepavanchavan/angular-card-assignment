@@ -7,17 +7,26 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() dataSet:any= []
+  @Input() dataSet:any= [];
+  pills:any=["Color","Test","Smell","Sweet","Size","Season"]
 
-constructor() {}
+public pillsCount=0;
+
+constructor() {
+for (let i = 2; i < this.pills.length; i++) {
+  this.pillsCount = this.pillsCount+1;
+}
+console.log(this.pillsCount);
+}
 key:any="hide"
 expand:any="readMore"
   ngOnInit(): void {}
-  readMore() {
+  readMore(id:any) {
+    console.log(id)
     this.key = "show";
     this.expand = "readMoreHide"
    }
-   readLess() {
+   readLess(id:any) {
     this.key = "hide"
     this.expand = "readMore"
    }

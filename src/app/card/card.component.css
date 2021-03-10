@@ -24,7 +24,6 @@
 
 .readMore {
   color: red;
-  text-decoration: underline;
   font-weight: bold;
 }
 .readMore:hover {
@@ -32,7 +31,6 @@
 }
 .readLess{
     color: blue;
-    text-decoration: underline;
     font-weight: bold;
 }
 .readLess:hover{
@@ -54,5 +52,16 @@
   object-fit: cover;
 }
 .container {
-  padding: 25px;
+  padding: 20px;
+}
+.pillButton {
+  background-color:rgb(255, 139, 245);
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
 }
