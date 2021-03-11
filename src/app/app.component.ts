@@ -20,8 +20,8 @@ export class AppComponent {
       id:2,
       image: 'https://images.unsplash.com/photo-1597045315639-9df6c171fb69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'APPLE',
-      before: "Apples are among the world's most popular fruits. They grow on the apple tree that is (Malus domestica)",
-      after: ", originally from Central Asia. Apples are high in fiber, vitamin C, and various antioxidants. They are also very filling, considering their low calorie count.",
+      before: "Apples are among the world's most popular fruits. They grow on the apple tree that is (Malus domestica),",
+      after: "originally from Central Asia. Apples are high in fiber, vitamin C, and various antioxidants. They are also very filling, considering their low calorie count.",
     },
     {
       id:3,

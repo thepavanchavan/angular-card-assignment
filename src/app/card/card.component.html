@@ -11,11 +11,10 @@
         </ul>
       </div>
       <div class="text" id="{{data.id}}">
-        {{data.before}}<br><button id="{{data.id}}"
-           class="{{expand}}"
-           (click)="readMore(this)"
-           >Check</button
-         >
+        {{data.before}}
+        <div>
+        <button class="{{expand}}" (click)="readMore(this)">Check</button>
+        </div>
          <span class="{{ key }}"
            >{{data.after}}
            <span
