@@ -10,25 +10,58 @@ export class AppComponent {
 
   information: any = [
     {
-      id:1,
-      image: 'https://images.unsplash.com/photo-1571660336069-a551b9ff9c45?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYyfHxmcnVpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      id: 1,
+      image:'https://images.unsplash.com/photo-1571660336069-a551b9ff9c45?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYyfHxmcnVpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'PINAPPLE',
-      before: " The pineapple is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae.",
-      after: " The pineapple is indigenous to South America, where it has been cultivated for many centuries. The pineapple is a tropical plant with an edible fruit",
+      para:' The pineapple is a tropical plant.',
+      pills:["Color","Test","Smell","Sweet","Size"],
+      remainingPillsCount:3,
     },
     {
-      id:2,
-      image: 'https://images.unsplash.com/photo-1597045315639-9df6c171fb69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      id: 2,
+      image:'https://images.unsplash.com/photo-1597045315639-9df6c171fb69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'APPLE',
-      before: "Apples are among the world's most popular fruits. They grow on the apple tree that is (Malus domestica),",
-      after: "originally from Central Asia. Apples are high in fiber, vitamin C, and various antioxidants. They are also very filling, considering their low calorie count.",
+      para:"Apples are among the world's most popular fruits.",
+      pills:["Season","Color","Test","Smell","Sweet","Size","vitamins"],
+      remainingPillsCount:5
     },
     {
-      id:3,
-      image: 'https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDR8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      id: 3,
+      image:'https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDR8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
       title: 'STRAWBERRY',
-      before: "The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, ",
-      after: " which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.",
-    }
+      para:'Strawberries improve heart function',
+      pills:["Smell","Sweet","Color","Test","Size","Season"],
+      remainingPillsCount:4
+    },
   ];
+
+  changedInformation: any = [
+    {
+      id: 1,
+      image:'https://images.unsplash.com/photo-1571660336069-a551b9ff9c45?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTYyfHxmcnVpdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'pinapple',
+      para:' this has a rosette of pointed leaves up to 90 cm.',
+      pills:["Vitamins","Taste","Smell","Sweet","Size","Season"],
+      remainingPillsCount:4
+    },
+    {
+      id: 2,
+      image:'https://images.unsplash.com/photo-1597045315639-9df6c171fb69?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'apple',
+      para:"This fruit is good for health.",
+      pills:["Healthy","Energy-Booster","Test","Smell","Sweet","Size","aroma"],
+      remainingPillsCount:5
+    },
+    {
+      id: 3,
+      image:'https://images.unsplash.com/photo-1589533610925-1cffc309ebaa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDR8fGZydWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      title: 'strawberry',
+      para:'The fruit is appreciated for its characteristic aroma',
+      pills:["Aroma","Juicy","Color","Test","Size"],
+      remainingPillsCount:3
+    },
+  ];
+  changeEvent(){
+    this.information=this.changedInformation;
+  }
 }

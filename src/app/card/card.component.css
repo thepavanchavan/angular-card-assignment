@@ -17,34 +17,14 @@
   font-family: futura;
   font-weight: 100;
   font-size: 17px;
+  white-space: nowrap; 
+  width: 100px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-.readMore {
-  color: rgb(7, 7, 7);
-  font-weight: bold;
-  margin-left: 75%;
-  background-color:darkseagreen;
-  padding: 5px;
+.text:hover{
+  overflow:visible;
 }
-.readMore:hover {
-  cursor: pointer;
-}
-.readLess{
-    color: blue;
-    font-weight: bold;
-}
-.readLess:hover{
-    cursor: pointer;
-}
-.hide {
-  display: none;
-}
-.show {
-    display: initial;
-  }
-  .readMoreHide{
-      display:none;;
-  }
 
 .image{
   width: 100%;

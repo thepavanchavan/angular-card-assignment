@@ -1,27 +1,16 @@
-
 <div class="example-card" *ngFor = "let data of dataSet">
     <div class="container">
       <img class="image" src="{{data.image}}">
       <h2 style="margin: 0 0 2px;"><b>{{data.title}}</b></h2>
       <div class="pillsContainer">
         <ul style="list-style: none; padding-inline-start: 0px;">
-      <li class="pill">{{pills[0]}}</li>
-      <li class="pill">{{pills[1]}}</li>
-      <li class="pill">+{{pillsCount}}</li>
+      <li class="pill">{{data.pills[0]}}</li>
+      <li class="pill">{{data.pills[1]}}</li>
+      <li class="pill">+{{data.remainingPillsCount}}</li>
         </ul>
       </div>
-      <div class="text" id="{{data.id}}">
-        {{data.before}}
-        <div>
-        <button class="{{expand}}" (click)="readMore(this)">Check</button>
-        </div>
-         <span class="{{ key }}"
-           >{{data.after}}
-           <span
-           class="readLess"
-           (click)="readLess(this)"
-           > Read less</span></span
-         >
+      <div class="text">
+        {{data.para}}
        </div> 
     </div>
   </div> 
