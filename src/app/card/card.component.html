@@ -3,11 +3,18 @@
       <img class="image" src="{{data.image}}">
       <h2 style="margin: 0 0 2px;"><b>{{data.title}}</b></h2>
       <div class="pillsContainer">
-        <ul style="list-style: none; padding-inline-start: 0px;">
+        <ul style="list-style: none; padding-inline-start: 0px;" *ngIf = "data.pills.length > 2">
       <li class="pill">{{data.pills[0]}}</li>
       <li class="pill">{{data.pills[1]}}</li>
       <li class="pill">+{{data.pills.length - 2}}</li>
         </ul>
+        <ul style="list-style: none; padding-inline-start: 0px;" *ngIf = "data.pills.length == 2">
+          <li class="pill">{{data.pills[0]}}</li>
+          <li class="pill">{{data.pills[1]}}</li>
+            </ul>
+            <ul style="list-style: none; padding-inline-start: 0px;" *ngIf = "data.pills.length == 1">
+              <li class="pill">{{data.pills[0]}}</li>
+                </ul>
       </div>
       <div class="text">
         {{data.para}}
